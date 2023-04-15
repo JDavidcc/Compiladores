@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5</title>
+    <link rel="stylesheet" href="../css/modal.css">
+    <script src="../js/modal.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script>
+        function Mostrar(){
+        //alert("Mostramos palabras reservadas")
+            var opcion=document.getElementById("Ejemplo").value;
+                if (opcion=="c#"){
+                    //document.getElementById("Texto").value=Csharp;
+                    alert("Palabra reservada c#")
+                }
+                else if(opcion=="Palabras reservadas Java"){
+                    //document.getElementById("Texto").value=Java;
+                    alert("Palabra reservada Java")
+                }
+                else if(opcion=="Palabras reservadas Kotlin") {
+                    //document.getElementById("Texto").value=Kotlin;
+                    alert("Palabra reservada Java")
+                }
+            }
+    </script>
+</head>
+<h1>Practica 5: Palabras reservadas</h1>
+<body>
+    <p>
+        <select name="" id="Ejemplo" onchange="Seleccionar()">
+            <option value="Limpio"  selected>--Seleciona lenguaje--</option>
+        <option value="c#">C#</option>
+        <option value="Java">Java</option>
+        <option value="Kotlin">Kotlin</option>   
+        </select>
+
+        <select name="" id="PalabrasReservadas" onchange="Mostrar()">
+            <option value="Limpio"  selected>--Palabras reservadas--</option>
+        <option value="c#">Palabras reservadas C#</option>
+        <option value="Java">Palabras reservadas Java</option>
+        <option value="Kotlin">Palabras reservadas Kotlin</option>   
+        </select><br>
+
+        <textarea name="Texto" style="resize: none;" id="Texto" cols="60" rows="20" resize: none></textarea><br>
+        <input type="file" id="ArchivoSubido"><br>
+        <input type="button" id="Descargar" value="Descargar archivo" onclick="Descargar()">
+    </p><br><br>
+
+    
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+    </div>
+  
+  </div>
+</body>
+</html>

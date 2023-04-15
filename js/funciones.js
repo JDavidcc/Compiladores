@@ -1,5 +1,5 @@
 //Declaración de variables
-
+//Lenguajes
 var Csharp="//Hello World in C#\n"+
 "class HelloWorld\n"+
 "{\n"+
@@ -21,6 +21,21 @@ var Kotlin="// Hello world in Kotlin\n"+
     "\tprintln(\"Hello, world!\")\n"+
 "}";
 
+//Palabras reservadas
+
+var Prcsharp="//Palabras reservadas en C#\n"+
+"// abstract as base bool break byte case\n"+
+"catch char checked class const continue decimal\n"+
+"default delegate do double else enum event\n"+
+"explicit extern false finally fixed float for\n"+
+"foreach goto if implicit in int interface\n"+
+"internal is lock  long  namespace new null\n"+
+"object operator out override params private protected\n"+
+"public readonly ref return sbyte sealed short\n"+
+"sizeof stackalloc static string struct switch this\n"+
+"throw true try typeof uint ulong unchecked\n"+
+"unsafe ushort using virtual void volatile while\n"
+
 //Declaración de funciónes
  function Seleccionar(){
     var opcion=document.getElementById("Ejemplo").value;
@@ -37,6 +52,8 @@ var Kotlin="// Hello world in Kotlin\n"+
     document.getElementById("Texto").value="";
   }
 }
+
+
 
 function Descargar(){
     alert("Vamos a descargar archivo");
