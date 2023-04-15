@@ -9,32 +9,37 @@ var Csharp="//Hello World in C#\n"+
     "\n\t}"+
 "\n}";
 
-var Java="// Hello World in Java\n"+
+var Java="// Hello World in Java \n"+
 
-"class HelloWorld {\n"+
-"\tstatic public void main( String args[] ) {\n"+
-    "\t\tSystem.out.println( \"Hello World!\" );\n"+
+"class HelloWorld { \n"+
+"\tstatic public void main( String args[] ) { \n"+
+    "\t\tSystem.out.println( \"Hello World!\" ); \n"+
   "\t}\n"+
 "}";
-var Kotlin="// Hello world in Kotlin\n"+
-"fun main(args : Array<String>) {\n"+
-    "\tprintln(\"Hello, world!\")\n"+
+var Kotlin="// Hello world in Kotlin \n"+
+"fun main(args : Array<String>) { \n"+
+    "\tprintln(\"Hello, world!\") \n"+
 "}";
 
 //Palabras reservadas
 
-var Prcsharp="//Palabras reservadas en C#\n"+
-"// abstract as base bool break byte case\n"+
-"catch char checked class const continue decimal\n"+
-"default delegate do double else enum event\n"+
-"explicit extern false finally fixed float for\n"+
-"foreach goto if implicit in int interface\n"+
-"internal is lock  long  namespace new null\n"+
-"object operator out override params private protected\n"+
-"public readonly ref return sbyte sealed short\n"+
-"sizeof stackalloc static string struct switch this\n"+
-"throw true try typeof uint ulong unchecked\n"+
-"unsafe ushort using virtual void volatile while\n"
+var Prcsharp="abstract as base bool break byte case \n"+
+"catch char checked class const continue decimal default delegate do double else enum event \n"+
+"explicit extern false finally fixed float for foreach goto if implicit in int interface \n"+
+"internal is lock  long  namespace new null object operator out override params private protected \n"+
+"public readonly ref return sbyte sealed short sizeof stackalloc static string struct switch this \n"+
+"throw true try typeof uint ulong unchecked unsafe ushort using virtual void volatile while \n"
+
+var PrJava="abstract	continue	for	new	switch assert	default	goto	package	synchronized boolean	do	if	private	this \n"+
+"break	double	implements	protected	throw byte	else	import	public	thows \n"+
+"case	enum	instanceof	return	transient catch	extends	int	short	try \n"+
+"char	final	interface	static	void class	finally	long	strictfp \n"+
+"volatile const	float	native	super	while"
+
+var PrKotlin="as as? break class continue do else false for fun if in !in \n"+
+"interface is !is null object package return super this throw true try typealias \n"+
+"typeof val var when while"
+
 
 //Declaración de funciónes
  function Seleccionar(){
