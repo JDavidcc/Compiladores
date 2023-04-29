@@ -71,6 +71,17 @@ function Descargar(){
     descarga.click();
     document.body.removeChild(descarga);
 }
+function Descargar2(){
+    alert("Vamos a descargar archivo");
+    var Analisis=document.getElementById("Analisis").value;
+    var descarga=document.createElement("a");
+    descarga.setAttribute("href","data:Text/plain;charset=utf-8,"+encodeURIComponent(Analisis));
+    descarga.setAttribute("download", "AnalisisLexico.txt");
+    descarga.style.display="none";
+    document.body.appendChild(descarga);
+    descarga.click();
+    document.body.removeChild(descarga);
+}
 
 function taquitosDeCabeza (evento){
 if (evento.target.files[0]){
